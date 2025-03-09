@@ -1,0 +1,91 @@
+:root{
+    --black-color: rgba(0, 0, 0, 0.905);
+    --white-color: rgba(255,255,255);
+
+    
+
+}
+
+@font-face {
+    font-family: 'Norse';
+    src: url(./assets/Norse-Bold.woff);
+}
+
+body{
+    display:flex;
+    flex-direction: column;    
+    width:100vw;
+    height:100vh;
+    padding:0;
+    margin:0;
+    background-color: var(--black-color);
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.container{    
+    width: 65vW;
+    height:100vh;
+    background-color: var(--white-color);
+    display: flex; 
+    flex-direction: row; 
+
+  
+}
+
+.image{
+    width: 25vw;
+    background-image: url(./assets/steinar-engeland-SgyH_Ix9lNE-unsplash.jpg);
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat;    
+}
+
+.logo-container, .credits{
+    height: 50%;
+}
+
+.credits{
+    font-family: 'Norse', sans-serif;
+    color: var(--white-color);
+    display: flex;
+    align-items:flex-end;
+    justify-content: center;
+}
+
+.logo-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.shaded-container{ 
+    height:18vh;
+    background-color: black;
+    width:100%;
+    opacity: 0.3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo{
+    height: 100%;
+    width: 25%;
+    background-image: url(./assets/odin-lined.png);
+    background-size: contain;
+   
+}
+
+.shaded-container p{
+    color: var(--white-color);
+    font-family: 'Norse', sans-serif;
+    font-weight: bold;
+    font-size: 100px;
+}
+   
+
+
