@@ -117,26 +117,61 @@ fieldset{
     border: none;
     display: flex;
     position: relative;
-    font-family: 'Roboto', sans-serif;
-    
+    font-family: 'Roboto', sans-serif;    
 }
 
+form  h3{
+    margin-left: 20px;
+}
 form{
     display:flex;
-    flex-direction: column;    
+    flex-direction: column;      
+    height: 66vh;
+}
+
+.form{
+    height: 40%;    
+    box-shadow: 5px gray;
 }
 
 input{
     appearance: none;
 }
 
-input, button{
+input{
     box-sizing: border-box;
-    width: 150px;
-    padding:0;
-    margin: 0;
+    width: 200px;
+    border-radius: 5px;
+    margin-bottom: 20px;
 }
 
+legend{
+    font-family: 'Roboto', sans-serif;
+    font-size: 0.70em;
+}
+
+.left-side, .right-side{
+    width: 40%;
+}
+
+.right-side{
+    margin-left: -30px;
+}
+
+input + span{
+    position: relative;
+}
+
+input:required + span::after{
+    font-size: 0.7em;
+    position:absolute;
+    content: 'required';
+    color: var(--white-color);
+    background-color: var(--black-color);
+    padding: 5px 10px;
+    top:-26px;
+    left: -70px; 
+}
 
 
 
