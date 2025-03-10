@@ -1,6 +1,8 @@
 :root{
     --black-color: rgba(0, 0, 0, 0.905);
     --white-color: rgba(255,255,255);
+    --chalk-white-color: rgb(224, 219, 209)
+    
 
     
 
@@ -36,7 +38,7 @@ body{
 }
 
 .image{
-    width: 25vw;
+    width: 35vw;
     background-image: url(./assets/steinar-engeland-SgyH_Ix9lNE-unsplash.jpg);
     background-size: cover; 
     background-position: center; 
@@ -77,7 +79,8 @@ body{
     width: 25%;
     background-image: url(./assets/odin-lined.png);
     background-size: contain;
-   
+    background-position: center;
+    background-repeat: no-repeat;   
 }
 
 .shaded-container p{
@@ -86,6 +89,54 @@ body{
     font-weight: bold;
     font-size: 100px;
 }
-   
+
+.form-container{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.form-container .first-text{
+    height: 34vh;
+    width: 100%; 
+    font-family: 'Roboto',sans-serif ;
+    display:flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: start;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: var(--chalk-white-color);
+}
+
+.text-lines{
+    margin-left: 20px;
+}
+
+fieldset{
+    border: none;
+    display: flex;
+    position: relative;
+    font-family: 'Roboto', sans-serif;
+    
+}
+
+form{
+    display:flex;
+    flex-direction: column;    
+}
+
+input{
+    appearance: none;
+}
+
+input, button{
+    box-sizing: border-box;
+    width: 150px;
+    padding:0;
+    margin: 0;
+}
+
+
 
 
