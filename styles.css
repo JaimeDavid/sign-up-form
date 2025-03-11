@@ -1,8 +1,11 @@
 :root{
     --black-color: rgba(0, 0, 0, 0.905);
     --white-color: rgba(255,255,255);
-    --chalk-white-color: rgb(224, 219, 209)
-    
+    --chalk-white-color: rgb(224, 219, 209);
+    --blue-color: rgb(0, 0, 255);
+    --red-color: rgb(255, 0, 0); 
+    --input-color: #E5E7EB;
+    --shaded-blue-color: rgba(0, 0, 255, 0.1)
 
     
 
@@ -131,7 +134,7 @@ form{
 
 .form{
     height: 40%;    
-    box-shadow: 5px gray;
+    box-shadow: 0 4px 2px -2px gray;
 }
 
 input{
@@ -172,6 +175,21 @@ input:required + span::after{
     top:-26px;
     left: -70px; 
 }
+
+
+input:invalid{
+    border: 1px solid var(--red-color);
+    box-shadow: 0 4px 2px -2px gray;
+}
+
+
+input:valid{
+    border: 1px solid var(--blue-color);
+    box-shadow: 0 4px 2px -2px gray;
+    background-color: var(--shaded-blue-color) ;
+}
+
+
 
 
 
