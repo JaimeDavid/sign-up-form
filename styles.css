@@ -5,7 +5,8 @@
     --blue-color: rgb(0, 0, 255);
     --red-color: rgb(255, 0, 0); 
     --input-color: #E5E7EB;
-    --shaded-blue-color: rgba(0, 0, 255, 0.1)
+    --shaded-blue-color: rgba(0, 0, 255, 0.1);
+    --button-green-color: #596D48;
 
     
 
@@ -133,7 +134,7 @@ form{
 }
 
 .form{
-    height: 40%;    
+    height: 45%;    
     box-shadow: 0 4px 2px -2px gray;
 }
 
@@ -146,6 +147,7 @@ input{
     width: 200px;
     border-radius: 5px;
     margin-bottom: 20px;
+    height: 25px;
 }
 
 legend{
@@ -191,4 +193,33 @@ input[type="password"]:invalid{
     border: 1px solid var(--red-color);
 }
 
+.button{
+    color: gray;
+}
+
+button, p{
+    margin-left: 20px;
+}
+
+button{
+    margin-top: 25px;
+    height: 35px;
+    width: 160px;
+    font-family: 'Roboto', 'Courier New', Courier, monospace;
+    color: var(--white-color);
+    background-color: var(--button-green-color);
+    border-radius: 7px;
+    outline: none;
+}
+
+a:link{
+    color: var(--button-green-color);
+    text-decoration: none;
+}
+
+.button p{
+    color:black;
+    font-family: 'Roboto',sans-serif ;
+ 
+}
 
