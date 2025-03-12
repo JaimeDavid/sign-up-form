@@ -176,20 +176,19 @@ input:required + span::after{
     left: -70px; 
 }
 
-
-input:invalid{
-    border: 1px solid var(--red-color);
-    box-shadow: 0 4px 2px -2px gray;
+input{
+    border: 1px solid var(--input-color);
 }
 
-
-input:valid{
+input:focus{
     border: 1px solid var(--blue-color);
-    box-shadow: 0 4px 2px -2px gray;
-    background-color: var(--shaded-blue-color) ;
+    box-shadow: 0 4px 2px -2px gray; ;
+    outline:none;    
+    
 }
 
-
-
+input[type="password"]:invalid{
+    border: 1px solid var(--red-color);
+}
 
 
